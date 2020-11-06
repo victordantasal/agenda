@@ -1,4 +1,7 @@
-# agenda
+# Agenda
+
+## Live version
+[Click Here](https://agenda-ubook.herokuapp.com/)
 
 ## Project setup
 ```
@@ -19,6 +22,3 @@ npm run build
 ```
 npm run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
