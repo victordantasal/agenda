@@ -1,8 +1,9 @@
-import Vue from 'vue';
-import Vuetify from 'vuetify/lib';
-import pt from 'vuetify/es5/locale/pt';
+import Vue from 'vue'
+import Vuetify from 'vuetify/lib'
+import pt from 'vuetify/es5/locale/pt'
+import IconComponent from '@/components/icons/CustomIcon.vue'
 
-Vue.use(Vuetify);
+Vue.use(Vuetify)
 
 export default new Vuetify({
   theme: {
@@ -18,8 +19,41 @@ export default new Vuetify({
       },
     },
   },
-    lang: {
-      locales: { pt },
-      current: 'pt',
-    },
-});
+
+  lang: {
+    locales: { pt },
+    current: 'pt',
+  },
+
+  icons: {
+    values: {
+      delete: {
+        component: IconComponent,
+        props: {
+          name: 'delete'
+        }
+      },
+
+      plus: {
+        component: IconComponent,
+        props: {
+          name: 'plus'
+        }
+      },
+
+      search: {
+        component: IconComponent,
+        props: {
+          name: 'search'
+        }
+      },
+
+      edit: {
+        component: IconComponent,
+        props: {
+          name: 'edit'
+        }
+      }
+    }
+  }
+})
