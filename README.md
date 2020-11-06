@@ -1,6 +1,6 @@
 # Agenda
 
-## Live version
+### Live version
 [Click Here](https://agenda-ubook.herokuapp.com/)
 
 ## Project setup
