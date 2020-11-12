@@ -7,7 +7,25 @@ Vue.use(Vuex)
 /* eslint-disable no-new */
 const store = new Vuex.Store({
   plugins: [createPersistedState()],
-  modules: {
+  
+  state: {
+    searchQuery: '',
+  },
+
+  mutations: {
+    SET_SEARCH_QUERY(state, payload) {
+      state.searchQuery = payload
+    }
+  },
+
+  actions: {
+    setSearchQuery({commit}, payload) {
+      commit('SET_SEARCH_QUERY', payload)
+    }
+  },
+
+  getters: {
+    searchQuery: state => state.searchQuery
   }
 })
 
