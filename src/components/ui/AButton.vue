@@ -60,14 +60,14 @@ export default {
 <style lang="scss">
   .a-button {
     font-size: 14px !important;
-    text-transform: none;
+    text-transform: none !important;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
     letter-spacing: normal;
 
-    border-radius: 20px;
+    border-radius: 20px !important;
     padding: 8px 22px 8px 16px !important;
     height: 32px !important;
 
