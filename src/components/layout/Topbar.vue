@@ -7,7 +7,7 @@
     >
       <img alt="Ubook logo" src="@/assets/ic-logo.svg" class="ubook-logo" :to="{ name: 'Home' }">
 
-      <AButton class="mr-sm-6"></AButton>
+      <AButton class="mr-sm-6" v-if="hasContacts"></AButton>
     </v-col>
     <v-col 
       cols="12" 
@@ -27,7 +27,7 @@ export default {
   components: { AButton },
 
   computed: {
-    ...mapGetters(['searchQuery']),
+    ...mapGetters(['searchQuery', 'hasContacts']),
     height () {
       if (this.$vuetify.breakpoint.xsOnly) {
         return {
@@ -35,8 +35,8 @@ export default {
         } 
       }
       return {
-          maxHeight: '64px'
-        } 
+        maxHeight: '64px'
+      } 
     }
   },
 
